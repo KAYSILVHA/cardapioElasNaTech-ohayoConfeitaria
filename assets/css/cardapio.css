@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+  font-weight: normal;
+  font-size: 42px;
+}
+h2{
+  font-weight: normal;
+  font-size: 32px;
+}
+
+h3{
+  font-weight: normal;
+  font-size: 25px;
+}
+
+header{
+  width: 100vw;
+  height: 25vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 200;
+}
+
+.logo{
+  width: 150px;
+  height: 15vh;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%
+}
+
+header ul{
+  width: 60vw;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+header a:hover{
+  background-color: #80808060;
+}
+
+main{
+  margin-top: 27vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.logo-main{
+  width: 100px;
+}
+
+.bolos,
+.docinhos{
+  width: 100vw;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-bolos,
+.images-docinhos{
+  width: 80vw;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.images-bolos .doce,
+.images-docinhos .doce{
+  width: 400px;
+  height: 300px;
+  background-color: #80808030;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 40px 0 40px 0;
+}
+
+.images-bolos .doce:hover,
+.images-docinhos .doce:hover{
+  filter: grayscale(50%);
+}
+
+.images-bolos .doce img,
+.images-docinhos .doce img{
+  width: 100%;
+  height: 60%;
+}
+
+.infos{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 18px;
+  color: darkred;
+}
+
+
+.docinhos{
+  background-color: #80808030;
+}
+
+
+.images-docinhos .doce{
+  background-color: #fff;
+}
+
+.aviso{
+  width: 100vw;
+  padding: 50px;
+  text-align: center;
+}
+
+
+strong{
+  font-weight: bold;
+  color: darkred;
+}
+footer{
+  width: 100vw;
+  height: 25vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+
+footer figure{
+  width: 150px;
+  height: 150px;
+}
+
+footer img{
+  width: 100%;
+  height: 100%
+}
+
+@media (max-width: 600px){
+
+  .images-bolos,
+  .images-docinhos{
+    width: 100vw;
+  }
+
+  .images-bolos .doce,
+  .images-docinhos .doce{
+    width: 90vw;
+    border-radius: 0;
+  }
+}
