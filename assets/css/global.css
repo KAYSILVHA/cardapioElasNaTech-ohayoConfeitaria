@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+footer{
+  width: 100vw;
+  height: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 0;
+}
+
+
+footer figure.logo-footer{
+  width: 100px;
+  height: 100px;
+}
+
+footer .logo-footer img{
+  width: 100%;
+  height: 100%
+}
+
+.social-media{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #80808060;
+  border-bottom: 1px solid #80808060;
+  padding: 20px 0;
+}
+
+.social-media figure{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-media div{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  border: 2px solid #80808060;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media div:hover{
+  cursor: pointer;
+  opacity: .5;
+}
+
+.social-media img{
+  width: 80%;
+  height: 80%
+}
+
+footer h2,
+.copy{
+  color: white;
+}
+
+.copy{
+  widht: 100vw;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+

@@ -1,18 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body{
-  overflow-x: hidden;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
 h1{
   font-weight: normal;
   font-size: 42px;
@@ -156,31 +141,9 @@ main{
   text-align: center;
 }
 
-
 strong{
   font-weight: bold;
   color: darkred;
-}
-footer{
-  width: 100vw;
-  height: 25vh;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-
-footer figure{
-  width: 150px;
-  height: 150px;
-}
-
-footer img{
-  width: 100%;
-  height: 100%
 }
 
 @media (max-width: 600px){

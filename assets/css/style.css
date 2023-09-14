@@ -1,18 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body{
-  overflow-x: hidden;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
 header{
   width: 100vw;
   height: auto;
@@ -160,8 +145,8 @@ h2{
 
 .galeria-imagem:hover img{
   filter: grayscale(100%);
-  width: 220px;
-  height: 180px;
+  width: calc(250px * .95);
+  height: calc(180px * .95);
 }
 
 .cardapio{
@@ -286,28 +271,6 @@ textarea{
   background-color: 
 }
 
-footer{
-  width: 100vw;
-  height: auto;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-
-footer figure{
-  width: 200px;
-  height: 200px;
-}
-
-footer img{
-  width: 100%;
-  height: 100%
-}
-
 
 @media (max-width: 696px){
   header{
@@ -372,12 +335,22 @@ footer img{
     height: 300px;
   }
 
+  .galeria-imagem:hover img{
+    width: calc(90vw * .95);
+    height: calc(300px * .95);
+  }
+
   form{
     width: 100vw;
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .social-media figure{
+    width: 60%;
+    gap: 10px;
   }
 
 }
@@ -412,4 +385,6 @@ footer img{
     border-radius: 0;
     height: 100%;
   }
+
+  
 }
